@@ -7,49 +7,91 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>astaton</title>
     <style>
-        .red {
-            color: red;
-            background-color: transparent;
-            border: 2px solid purple;
-            padding: 1rem 2rem;
-            font-size: 24px;
-            font-weight: 700;
-            transition: .3s;
-        }
-
-        .botao {
-            right: 30%;
-        }
-
-        button {
-            transition: .3s;
-            position: absolute;
-            background-color: rgb(165, 2, 165);
-            color: #fff;
-            border-style: none;
-            border-radius: 5px;
-            padding: 1rem 2rem;
-            font-weight: 700;
-            text-transform: uppercase;
+        ul {
+            display: flex;
+            align-items: center;
+            list-style: none;
         }
 
         .active {
-            background-color: green;
+            padding: 1rem 2rem;
+            color: #fff;
+            background-color: rgb(68, 68, 255);
+            border-radius: 5px;
+            border-style: none;
+            font-size: 16px;
+            margin-right: 10px;
         }
 
-        img {
-            transition: .5s;
+        ul>li {
+
+            padding: 1rem 2rem;
+            color: #fff;
+            background-color: rgb(209, 209, 209);
+            border-radius: 5px;
+            border-style: none;
+            font-size: 16px;
+            margin-right: 10px;
+
+        }
+
+        .show {
+            display: block !important;
+            animation: show .5s forwards;
+        }
+
+        @keyframes show {
+            from {
+                opacity: 0;
+                transform: translate3d(0, -30px, 0);
+            }
+
+            to {
+                opacity: 1;
+                transform: translate3d(0, 0, 0);
+            }
+        }
+
+        .tab-content section {
+            display: none;
+            padding: 50px;
+        }
+
+        ul>li:hover {
+            cursor: pointer;
+        }
+
+        .content {
+            font-size: 16px;
+            transition: .3s;
         }
     </style>
 
 </head>
 
 <body>
-    <div>
-        <img width="250px" src="https://cdn.mos.cms.futurecdn.net/z6ia6LxLhDKM62yiQwvEm3.jpg" alt="">
-        <button class="botao">entrar</button>
-    </div>
-    <button class="btn-verificar">clique para verificar</button>
+    <section>
+        <ul class="tab-menu">
+            <li class="active">item 1</li>
+            <li>item 2</li>
+            <li>item 3</li>
+        </ul>
+
+        <div class="tab-content">
+            <section class="show">content 1 Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur possimus
+                beatae
+                repellendus debitis! Nisi, aperiam praesentium. Mollitia, deleniti asperiores, esse alias illo
+                voluptatibus magnam laboriosam itaque ipsum repudiandae, doloremque molestiae.</section>
+            <section>content 2 Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia fuga culpa voluptates
+                praesentium
+                similique pariatur atque quaerat consequuntur nemo est libero, modi blanditiis sunt laudantium error
+                dolorum harum totam perferendis.</section>
+            <section>content 3 Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam quia aut nemo temporibus
+                laudantium
+                accusantium, repudiandae doloremque recusandae voluptatibus! Quasi quaerat enim quis provident libero
+                eum magni explicabo minus eligendi!</section>
+        </div>
+    </section>
     <script src="main.js"></script>
 </body>
 
