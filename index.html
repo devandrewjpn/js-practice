@@ -7,57 +7,73 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>astaton</title>
     <style>
-        .faq>h4 {
-            background-color: rgb(179, 40, 179);
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
+        section {
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #home {
+            background-color: rgb(33, 33, 165);
             color: #fff;
-            padding: 10px;
-            border-radius: 5px;
+
         }
 
-        .faq>h4:after {
-            content: '🡫';
-            margin-left: 10px;
+        #services {
+            background-color: rgb(194, 47, 47);
+            color: #fff;
+
         }
 
-        .faq>h4.show::after {
-            content: '🡩';
+        #faq {
+            background-color: rgb(36, 187, 142);
+            color: #fff;
+
         }
 
-        .faq>p.show {
-            display: block;
-            animation: slide .5s forwards;
+        nav {
+            position: fixed;
+
         }
 
-        .faq>p {
-            display: none;
+        nav ul {
+            display: flex;
+            color: #fff;
+            list-style: none;
         }
 
-
-        @keyframes slide {
-            from {
-                opacity: 0;
-                max-height: 0;
-            }
-
-            to {
-                opacity: 1;
-                max-height: 200px;
-            }
+        nav ul li a {
+            margin-right: 20px;
+            color: #fff;
+            text-decoration: none;
+            text-transform: uppercase;
         }
     </style>
 
 </head>
 
 <body>
-    <section class="faq">
-        <h4>pergunta</h4>
-        <p>resposta pergunta 1</p>
-
-        <h4>pergunt 2</h4>
-        <p>resposta pergunta 2</p>
-
-        <h4>pergunta 3</h4>
-        <p>resposta pergunta 3</p>
+    <nav>
+        <ul class="nav">
+            <li><a href="#home">home</a></li>
+            <li><a href="#services">services</a></li>
+            <li><a href="#faq">faq</a></li>
+        </ul>
+    </nav>
+    <section id="home">
+        <span>home</span>
+    </section>
+    <section id="services">
+        <span>services</span>
+    </section>
+    <section id="faq">
+        <span>faq</span>
     </section>
     <script src="main.js"></script>
 </body>

@@ -1,15 +1,33 @@
-const asks = document.querySelectorAll('.faq h4');
-asks[0].classList.add('show');
-asks[0].nextElementSibling.classList.add('show');
+const links = document.querySelectorAll('li a[href^="#"]');
 
-function activeAccordion() {
-    this.classList.toggle('show');
-    this.nextElementSibling.classList.toggle('show');
+function scrollToSection(event) {
+    event.preventDefault();
+    const href = event.currentTarget.getAttribute('href');
+    const section = document.querySelector(href);
+
+    section.scrollIntoView({
+        behavior: 'smooth',
+        block: 'start'
+    });
 }
 
-asks.forEach((item) => {
-    item.addEventListener('click', activeAccordion);
-})
+links.forEach((link) => {
+    link.addEventListener('click', scrollToSection);
+});
+
+
+// const asks = document.querySelectorAll('.faq h4');
+// asks[0].classList.add('show');
+// asks[0].nextElementSibling.classList.add('show');
+
+// function activeAccordion() {
+//     this.classList.toggle('show');
+//     this.nextElementSibling.classList.toggle('show');
+// }
+
+// asks.forEach((item) => {
+//     item.addEventListener('click', activeAccordion);
+// })
 
 
 // const tabMenu = document.querySelectorAll('.tab-menu li');
