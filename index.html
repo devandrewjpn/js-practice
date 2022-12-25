@@ -10,10 +10,11 @@
         body {
             margin: 0;
             padding: 0;
+            height: 1500px;
         }
 
         section {
-            height: 100vh;
+            height: 60vh;
             display: flex;
             justify-content: center;
             align-items: center;
@@ -39,7 +40,7 @@
 
         nav {
             position: fixed;
-
+            z-index: 10;
         }
 
         nav ul {
@@ -54,6 +55,18 @@
             text-decoration: none;
             text-transform: uppercase;
         }
+
+        .scr-anim {
+            opacity: 0;
+            transition: .5s;
+            transform: translate3d(-30px, 0, 0);
+        }
+
+        .anim {
+            opacity: 1;
+            transition: .5s;
+            transform: translate3d(0px, 0, 0);
+        }
     </style>
 
 </head>
@@ -66,13 +79,13 @@
             <li><a href="#faq">faq</a></li>
         </ul>
     </nav>
-    <section id="home">
+    <section class="scr-anim" id="home">
         <span>home</span>
     </section>
-    <section id="services">
+    <section class="scr-anim" id="services">
         <span>services</span>
     </section>
-    <section id="faq">
+    <section class="scr-anim" id="faq">
         <span>faq</span>
     </section>
     <script src="main.js"></script>
