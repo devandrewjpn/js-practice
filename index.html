@@ -7,90 +7,57 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>astaton</title>
     <style>
-        ul {
-            display: flex;
-            align-items: center;
-            list-style: none;
-        }
-
-        .active {
-            padding: 1rem 2rem;
+        .faq>h4 {
+            background-color: rgb(179, 40, 179);
             color: #fff;
-            background-color: rgb(68, 68, 255);
+            padding: 10px;
             border-radius: 5px;
-            border-style: none;
-            font-size: 16px;
-            margin-right: 10px;
         }
 
-        ul>li {
-
-            padding: 1rem 2rem;
-            color: #fff;
-            background-color: rgb(209, 209, 209);
-            border-radius: 5px;
-            border-style: none;
-            font-size: 16px;
-            margin-right: 10px;
-
+        .faq>h4:after {
+            content: '🡫';
+            margin-left: 10px;
         }
 
-        .show {
-            display: block !important;
-            animation: show .5s forwards;
+        .faq>h4.show::after {
+            content: '🡩';
         }
 
-        @keyframes show {
+        .faq>p.show {
+            display: block;
+            animation: slide .5s forwards;
+        }
+
+        .faq>p {
+            display: none;
+        }
+
+
+        @keyframes slide {
             from {
                 opacity: 0;
-                transform: translate3d(0, -30px, 0);
+                max-height: 0;
             }
 
             to {
                 opacity: 1;
-                transform: translate3d(0, 0, 0);
+                max-height: 200px;
             }
-        }
-
-        .tab-content section {
-            display: none;
-            padding: 50px;
-        }
-
-        ul>li:hover {
-            cursor: pointer;
-        }
-
-        .content {
-            font-size: 16px;
-            transition: .3s;
         }
     </style>
 
 </head>
 
 <body>
-    <section>
-        <ul class="tab-menu">
-            <li class="active">item 1</li>
-            <li>item 2</li>
-            <li>item 3</li>
-        </ul>
+    <section class="faq">
+        <h4>pergunta</h4>
+        <p>resposta pergunta 1</p>
 
-        <div class="tab-content">
-            <section class="show">content 1 Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur possimus
-                beatae
-                repellendus debitis! Nisi, aperiam praesentium. Mollitia, deleniti asperiores, esse alias illo
-                voluptatibus magnam laboriosam itaque ipsum repudiandae, doloremque molestiae.</section>
-            <section>content 2 Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia fuga culpa voluptates
-                praesentium
-                similique pariatur atque quaerat consequuntur nemo est libero, modi blanditiis sunt laudantium error
-                dolorum harum totam perferendis.</section>
-            <section>content 3 Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam quia aut nemo temporibus
-                laudantium
-                accusantium, repudiandae doloremque recusandae voluptatibus! Quasi quaerat enim quis provident libero
-                eum magni explicabo minus eligendi!</section>
-        </div>
+        <h4>pergunt 2</h4>
+        <p>resposta pergunta 2</p>
+
+        <h4>pergunta 3</h4>
+        <p>resposta pergunta 3</p>
     </section>
     <script src="main.js"></script>
 </body>
