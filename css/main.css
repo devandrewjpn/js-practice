@@ -2,6 +2,7 @@
 @import './dancing-button.css';
 @import './modal.css';
 @import './tooltip.css';
+@import './dropdown.css';
 
 * {
     font-family: 'Montserrat', sans-serif;
