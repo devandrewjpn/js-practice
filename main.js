@@ -7,3 +7,11 @@ tabMenu();
 modal();
 dancingButton();
 toolTip();
+
+document.addEventListener('visibilitychange', (event) => {
+    if (document.visibilityState === 'visible') {
+        document.title = 'treino astaton';
+    } else {
+        document.title = 'o manolo, treinar fi!'
+    }
+})
