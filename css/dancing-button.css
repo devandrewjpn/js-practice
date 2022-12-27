@@ -1,0 +1,23 @@
+.botao {
+    right: 30%;
+}
+
+.dance-button {
+    transition: .3s;
+    background-color: rgb(165, 2, 165);
+    color: #fff;
+    border-style: none;
+    border-radius: 5px;
+    padding: 1rem 2rem;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.active {
+    background-color: green;
+}
+
+img {
+    transition: .5s;
+    border-radius: 5px;
+}

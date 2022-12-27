@@ -1,0 +1,9 @@
+@import './sidemenu.css';
+@import './dancing-button.css';
+@import './modal.css';
+
+* {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+}

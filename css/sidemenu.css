@@ -1,0 +1,47 @@
+.sidemenu {
+    width: 20%;
+    position: fixed;
+    background-color: #0039C5;
+    height: 100vh;
+    padding: 20px;
+}
+
+.sidemenu>ul {
+    list-style: none;
+    color: #fff;
+}
+
+.sidemenu>ul>li {
+    background-color: #1248d1;
+    padding: 1rem;
+    border-radius: 10px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+.main-content {
+    margin-left: 25%;
+    padding-top: 2%;
+}
+
+.show {
+    display: block !important;
+    animation: show .5s forwards;
+}
+
+@keyframes show {
+    from {
+        opacity: 0;
+        transform: translate3d(0, 50px, 0);
+    }
+
+    to {
+        opacity: 1;
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+.main-content>section {
+    display: none;
+}

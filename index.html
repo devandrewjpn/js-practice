@@ -6,89 +6,47 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>astaton</title>
-    <style>
-        body {
-            margin: 0;
-            padding: 0;
-            height: 1500px;
-        }
-
-        section {
-            height: 60vh;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-
-        #home {
-            background-color: rgb(33, 33, 165);
-            color: #fff;
-
-        }
-
-        #services {
-            background-color: rgb(194, 47, 47);
-            color: #fff;
-
-        }
-
-        #faq {
-            background-color: rgb(36, 187, 142);
-            color: #fff;
-
-        }
-
-        nav {
-            position: fixed;
-            z-index: 10;
-        }
-
-        nav ul {
-            display: flex;
-            color: #fff;
-            list-style: none;
-        }
-
-        nav ul li a {
-            margin-right: 20px;
-            color: #fff;
-            text-decoration: none;
-            text-transform: uppercase;
-        }
-
-        .scr-anim {
-            opacity: 0;
-            transition: .5s;
-            transform: translate3d(-30px, 0, 0);
-        }
-
-        .anim {
-            opacity: 1;
-            transition: .5s;
-            transform: translate3d(0px, 0, 0);
-        }
-    </style>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
 
 </head>
 
 <body>
-    <nav>
-        <ul class="nav">
-            <li><a href="#home">home</a></li>
-            <li><a href="#services">services</a></li>
-            <li><a href="#faq">faq</a></li>
+
+    <div class="sidemenu">
+        <ul>
+            <li>Botao do samba</li>
+            <li>2
+
+            </li>
         </ul>
-    </nav>
-    <section class="scr-anim" id="home">
-        <span>home</span>
-    </section>
-    <section class="scr-anim" id="services">
-        <span>services</span>
-    </section>
-    <section class="scr-anim" id="faq">
-        <span>faq</span>
-    </section>
-    <script src="main.js"></script>
+    </div>
+
+    <div class="main-content">
+        <section class="show" id="scape-button">
+            <div>
+                <img width="250px" src="analise.jpg" alt="">
+                <button class="botao dance-button">entrar</button>
+            </div>
+            <button class="btn-verificar dance-button">clique para verificar</button>
+        </section>
+        <section>
+            <button class="dance-button" data-modal="open">modal astaton</button>
+        </section>
+    </div>
+
+    <div class="modal-box" data-modal="box">
+        <div class="modal">
+            <button data-modal="close" class="close-btn">x</button>
+            <span>olha a modal aí rapaiz mas que beleza</span>
+        </div>
+    </div>
+
+    <script type="module" src="main.js"></script>
 </body>
 
 </html>
