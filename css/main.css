@@ -1,6 +1,7 @@
 @import './sidemenu.css';
 @import './dancing-button.css';
 @import './modal.css';
+@import './tooltip.css';
 
 * {
     font-family: 'Montserrat', sans-serif;
