@@ -1,0 +1,28 @@
+.cro-btns>button {
+    background-color: rgb(31, 129, 136);
+    border-style: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    color: #fff;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.cro-btns>button[disabled] {
+    background-color: #4b9da3;
+}
+
+.cro-box>span {
+    font-size: 48px;
+    font-weight: 800;
+    color: #707070;
+    margin-bottom: 20px;
+}
+
+.cro-box {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}

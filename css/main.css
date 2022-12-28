@@ -3,6 +3,7 @@
 @import './modal.css';
 @import './tooltip.css';
 @import './dropdown.css';
+@import './cronometro.css';
 
 * {
     font-family: 'Montserrat', sans-serif;
