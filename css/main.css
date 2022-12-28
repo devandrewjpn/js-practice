@@ -5,6 +5,7 @@
 @import './dropdown.css';
 @import './cronometro.css';
 @import './menu-mobile.css';
+@import './numeros.css';
 
 * {
     font-family: 'Montserrat', sans-serif;
