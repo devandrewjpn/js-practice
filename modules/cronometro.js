@@ -10,7 +10,7 @@ export default function cronometro() {
     function startTime() {
         timer = setInterval(() => {
             tempo.innerText = i++;
-        }, 100);
+        }, 500);
         start.setAttribute('disabled', '');
     }
 

@@ -6,6 +6,7 @@ import dropdown from "./modules/dropdown.js";
 import cronometro from "./modules/cronometro.js";
 import menuMobile from "./modules/menu-mobile.js";
 import numerosAnim from "./modules/numeros.js";
+import creator from "./modules/creator.js";
 
 tabMenu();
 modal();
@@ -15,6 +16,7 @@ dropdown();
 cronometro();
 menuMobile();
 numerosAnim();
+creator();
 
 document.addEventListener('visibilitychange', (event) => {
     if (document.visibilityState === 'visible') {
@@ -23,3 +25,4 @@ document.addEventListener('visibilitychange', (event) => {
         document.title = 'o manolo, treinar fi!'
     }
 })
+
