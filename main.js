@@ -4,6 +4,7 @@ import modal from "./modules/modal.js";
 import toolTip from "./modules/tooltip.js";
 import dropdown from "./modules/dropdown.js"
 import cronometro from "./modules/cronometro.js"
+import menuMobile from "./modules/menu-mobile.js"
 
 tabMenu();
 modal();
@@ -11,6 +12,7 @@ dancingButton();
 toolTip();
 dropdown();
 cronometro();
+menuMobile();
 
 document.addEventListener('visibilitychange', (event) => {
     if (document.visibilityState === 'visible') {

@@ -4,6 +4,7 @@
 @import './tooltip.css';
 @import './dropdown.css';
 @import './cronometro.css';
+@import './menu-mobile.css';
 
 * {
     font-family: 'Montserrat', sans-serif;
