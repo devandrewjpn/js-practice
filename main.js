@@ -7,6 +7,7 @@ import cronometro from "./modules/cronometro.js";
 import menuMobile from "./modules/menu-mobile.js";
 import numerosAnim from "./modules/numeros.js";
 import creator from "./modules/creator.js";
+import api from "./modules/apiPlayground.js";
 
 tabMenu();
 modal();
@@ -17,6 +18,7 @@ cronometro();
 menuMobile();
 numerosAnim();
 creator();
+api();
 
 document.addEventListener('visibilitychange', (event) => {
     if (document.visibilityState === 'visible') {

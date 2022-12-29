@@ -27,6 +27,7 @@
             <li>Menu mobile</li>
             <li>Numeros</li>
             <li>Creator</li>
+            <li>api playground</li>
         </ul>
     </div>
 
@@ -128,12 +129,26 @@
                 <label for="fontSize">font-size</label>
                 <input type="number" name="fontSize" id="fontSize">
             </form>
-            <section class="resultado">
+            <div class="resultado">
                 <button class="btn">Clique</button>
                 <pre><code class="css"></code></pre>
-            </section>
+            </div>
         </section>
         <!-- creator end -->
+
+        <!-- api playground -->
+        <section>
+            <!-- <ul data-plan="questions"></ul> -->
+
+            <form action="">
+                <div style="display: flex;align-items: center;">
+                    <input style="margin: 0;" type="text" name="cep" placeholder="bota um cep:" id="cep">
+                    <button data-cep="search">buscar</button>
+                    <div data-cep="response"></div>
+                </div>
+            </form>
+        </section>
+        <!-- api playground end-->
     </div>
 
     <div class="modal-box" data-modal="box">
