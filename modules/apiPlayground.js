@@ -21,6 +21,20 @@ export default async function apiPlayground() {
 
     cepBusca.addEventListener('click', handleClick);
 
+    // const bitValue = document.querySelector('[data-bit]');
+
+    // function getBitCValue() {
+    //     fetch(`http://blockchain.info/ticker`)
+    //         .then(response => response.json())
+    //         .then(btc => {
+    //             bitValue.innerText = ('R$' + btc.BRL.buy).replace('.', ',');
+    //         })
+    // }
+
+    // setInterval(getBitCValue, 500);
+
+    // getBitCValue();
+
 
     // const questionsList = document.querySelector('[data-plan="questions"]');
 

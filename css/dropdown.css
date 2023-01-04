@@ -35,10 +35,10 @@
     position: relative;
 }
 
-[data-dropdown]:hover .dropdown-menu {
+[data-dropdown]:hover+.dropdown-menu {
     display: block;
 }
 
-[data-dropdown] .dropdown-menu {
+[data-dropdown]+.dropdown-menu {
     display: none;
 }

@@ -8,6 +8,7 @@ import menuMobile from "./modules/menu-mobile.js";
 import numerosAnim from "./modules/numeros.js";
 import creator from "./modules/creator.js";
 import api from "./modules/apiPlayground.js";
+import SlideNav from "./modules/slide.js";
 
 tabMenu();
 modal();
@@ -19,6 +20,11 @@ menuMobile();
 numerosAnim();
 creator();
 api();
+
+const slide = new SlideNav('.slide', '.slide-wrapper');
+slide.init();
+slide.addControl('.custom-controls');
+
 
 document.addEventListener('visibilitychange', (event) => {
     if (document.visibilityState === 'visible') {
